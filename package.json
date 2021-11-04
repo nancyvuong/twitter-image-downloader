@@ -1,0 +1,21 @@
+{
+  "name": "twitter-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "env-cmd -f ./config/dev.env node src/app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "hbs": "^4.1.2",
+    "twitter-v2": "^1.1.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0"
+  }
+}
