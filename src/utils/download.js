@@ -1,5 +1,6 @@
 const https = require('https');
 const fs = require('fs');
+const downloadsFolder = require('downloads-folder');
 
 var download = function(url, dest, cb) {
     var file = fs.createWriteStream(dest);
@@ -16,8 +17,9 @@ var download = function(url, dest, cb) {
 
 const downloadImages = async(data) => {
   try {
+    const downloadPath = downloadsFolder();
     for (const url in data){
-      download(url, data[url]);
+      download(url, downloadPath + '/' + data[url]);
     }
   } catch(e){
     console.log(e);

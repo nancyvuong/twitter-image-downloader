@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "downloads-folder": "^3.0.1",
     "express": "^4.17.1",
     "hbs": "^4.1.2",
     "twitter-v2": "^1.1.0"
