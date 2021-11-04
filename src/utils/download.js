@@ -21,6 +21,7 @@ const downloadImages = async(data) => {
     for (const url in data){
       download(url, downloadPath + '/' + data[url]);
     }
+    console.log(downloadPath.split('/')[3]);
   } catch(e){
     console.log(e);
   }
