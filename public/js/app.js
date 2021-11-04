@@ -13,7 +13,7 @@ tweetForm.addEventListener('submit', (e) => {
 
     messageOne.textContent = "Loading...";
 
-    fetch('http://localhost:3000/tweet?id=' + tweetId).then((response) => {
+    fetch('/tweet?id=' + tweetId).then((response) => {
         response.json().then((data) => {
             if(data.error){
                 messageOne.textContent = data.error;
