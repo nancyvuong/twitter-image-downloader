@@ -31,6 +31,11 @@ h1 {
     margin-bottom: 16px;
 }
 
+h1 a {
+    color: #333333;
+    text-decoration: none;
+}
+
 footer a, header a {
     color: #888888;
     margin-right: 16px;
