@@ -2,7 +2,6 @@ const path = require('path');
 const express = require('express');
 const hbs = require('hbs');
 const getTweet = require('./utils/twitter');
-//const downloadImages = require('./utils/download');
 
 const app = express();
 const port = process.env.PORT;
@@ -31,7 +30,6 @@ app.get('/tweet', async (req, res) => {
 
   try{
     const tweet = await getTweet(req.query.id);
-    //downloadImages(tweet);
     res.send(tweet);
 
   } catch(e){
