@@ -2,8 +2,6 @@ const Twitter = require('twitter-v2');
 
 
 const client = new Twitter({
-    //consumer_key: 'Yp8dtTMNMiwX5fJRMoP4eAEst',
-    //consumer_secret: 'cJz2vwAbbrtPOTTga6iMpwPo9jirSNNGpPtiMYZKNpA6RYN9Zd'
     consumer_key: process.env.TWITTER_CONSUMER_KEY,
     consumer_secret: process.env.TWITTER_CONSUMER_SECRET
   });
